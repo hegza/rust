@@ -2,7 +2,7 @@ use crate::spec::{Cc, LinkerFlavor, Lld, PanicStrategy, RelocModel, Target, Targ
 
 pub fn target() -> Target {
     Target {
-        data_layout: "e-m:e-p:32:32-i64:64-n32-S128".into(),
+        data_layout: "e-m:e-p:32:32-i64:64-n32-S32".into(),
         llvm_target: "riscv32".into(),
         pointer_width: 32,
         arch: "riscv32".into(),
