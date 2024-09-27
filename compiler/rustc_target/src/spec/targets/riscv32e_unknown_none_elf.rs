@@ -11,6 +11,7 @@ pub fn target() -> Target {
             linker_flavor: LinkerFlavor::Gnu(Cc::No, Lld::Yes),
             linker: Some("rust-lld".into()),
             cpu: "generic-rv32".into(),
+            llvm_abiname: "ilp32e".into(),
             max_atomic_width: Some(32),
             atomic_cas: false,
             features: "+e,+forced-atomics".into(),
